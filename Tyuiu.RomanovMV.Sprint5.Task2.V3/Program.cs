@@ -48,7 +48,7 @@ namespace Tyuiu.RomanovMV.Sprint5.Task2.V3
 
             Console.WriteLine("Файл: " + res);
             Console.WriteLine("Создан!");
-
+            Console.WriteLine(Path.GetTempPath());
 
 
             Console.ReadKey();

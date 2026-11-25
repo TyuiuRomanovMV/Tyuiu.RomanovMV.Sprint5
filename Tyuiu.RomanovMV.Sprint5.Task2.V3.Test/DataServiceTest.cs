@@ -12,7 +12,7 @@ namespace Tyuiu.RomanovMV.Sprint5.Task2.V3.Test
         [TestMethod]
         public void CheckExistFile()
         {
-            string path = @"C:\Users\max20\source\repos\Tyuiu.RomanovMV.Sprint5\Tyuiu.RomanovMV.Sprint5.Task2.V3\bin\Debug\net8.0\OutPutFileTask2.txt";
+            string path = @"C:\Users\max20\AppData\Local\Temp\OutPutFileTask2.csv";
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExist = fileInfo.Exists;

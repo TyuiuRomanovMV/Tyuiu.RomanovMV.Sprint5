@@ -1,7 +1,4 @@
-﻿
-
-using tyuiu.cources.programming.interfaces.Sprint5;
-
+﻿using tyuiu.cources.programming.interfaces.Sprint5;
 using System.IO;
 
 namespace Tyuiu.RomanovMV.Sprint5.Task2.V3.Lib
@@ -10,69 +7,33 @@ namespace Tyuiu.RomanovMV.Sprint5.Task2.V3.Lib
     {
         public string SaveToFileTextData(int[,] matrix)
         {
+            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask2.csv");
 
-            string path = Path.Combine(AppContext.BaseDirectory, "OutPutFileTask2.txt");
+            int rows = matrix.GetLength(0);
+            int columns = matrix.GetLength(1);
 
-            FileInfo file = new FileInfo(path);
-            bool existsFile = file.Exists;
-
-            if (existsFile)
-            {
-                File.Delete(path);
-            }
-
-            int rows = matrix.GetUpperBound(0) + 1;
-            int columns = matrix.Length / rows;
-
+            string[] lines = new string[rows];
 
             for (int i = 0; i < rows; i++)
             {
+                string[] values = new string[columns];
+
                 for (int j = 0; j < columns; j++)
                 {
                     if (matrix[i, j] % 2 != 0)
                     {
                         matrix[i, j] = 0;
                     }
+
+                    values[j] = matrix[i, j].ToString();
                 }
+
+                lines[i] = string.Join(";", values);
             }
 
-
-            string str = "";
-
-            for (int i = 0; i < rows; i++)
-            {
-                for (int j = 0; j < columns; j++)
-                {
-                    if (j != columns-1)
-                    {
-                        str = str + matrix[i, j] + ";";
-                    }
-                    else
-                    {
-                        str = str + matrix[i, j];
-                    }
-                }
-                if (i != rows-1) 
-                {
-                    File.AppendAllText(path, str + Environment.NewLine);
-                }
-                else
-                {
-                    File.AppendAllText(path, str);
-                }
-                str = "";
-            }
-
-
-            
-
-
-
+            File.WriteAllText(path, string.Join(Environment.NewLine, lines));
 
             return path;
-
-
-
         }
     }
 }
