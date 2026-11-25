@@ -20,6 +20,7 @@ namespace Tyuiu.RomanovMV.Sprint5.Task1.V11
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
+
             int start = -5; int stop = 5;
 
             string way = ds.SaveToFileTextData(start, stop);
