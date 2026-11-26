@@ -21,9 +21,6 @@ namespace Tyuiu.RomanovMV.Sprint5.Task5.V22
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            double x = 1;
-            Console.WriteLine($"Значение переменной Х = {x}");
-
 
 
             Console.WriteLine("***************************************************************************");
