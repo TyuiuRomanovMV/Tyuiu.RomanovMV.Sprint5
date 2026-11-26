@@ -8,12 +8,13 @@ namespace Tyuiu.RomanovMV.Sprint5.Task5.V22.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            string[] lines = File.ReadAllLines(path);
+            string str = File.ReadAllText(path);
+            string[] numbers = str.Split(' ');
 
             double min = 0;
             bool found = false;
 
-            foreach (string line in lines)
+            foreach (string line in numbers)
             {
                 double x = double.Parse(line, CultureInfo.InvariantCulture);
 
