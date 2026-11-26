@@ -14,7 +14,7 @@ namespace Tyuiu.RomanovMV.Sprint5.Task4.V29.Lib
         {
             string strX = File.ReadAllText(path);
             double x = Convert.ToDouble(strX, CultureInfo.InvariantCulture);
-            double res = Math.Round((x / 2 * x + Math.Sin(x * x)), 3);
+            double res = Math.Round((x / (2 * x) + Math.Sin(x * x)), 3);
             return res;
         }
     }
