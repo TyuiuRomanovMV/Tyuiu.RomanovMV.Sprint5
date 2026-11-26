@@ -3,7 +3,7 @@
 
 using tyuiu.cources.programming.interfaces.Sprint5;
 using System.IO;
-using System.Globalization; // мне так сказал гпт
+using System.Globalization; 
 
 
 namespace Tyuiu.RomanovMV.Sprint5.Task4.V29.Lib
