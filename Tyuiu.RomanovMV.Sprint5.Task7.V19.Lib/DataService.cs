@@ -21,7 +21,7 @@ namespace Tyuiu.RomanovMV.Sprint5.Task7.V19.Lib
 
             string str = File.ReadAllText(path);
 
-            str = str.Replace("сс", "");
+            str = System.Text.RegularExpressions.Regex.Replace(str,"сс","",System.Text.RegularExpressions.RegexOptions.IgnoreCase);
 
             string outPath = Path.Combine(Path.GetTempPath(), "OutPutDataFileTask7V19.txt");
 
