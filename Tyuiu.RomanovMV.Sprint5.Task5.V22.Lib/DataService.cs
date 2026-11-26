@@ -9,14 +9,18 @@ namespace Tyuiu.RomanovMV.Sprint5.Task5.V22.Lib
         public double LoadFromDataFile(string path)
         {
             string str = File.ReadAllText(path);
-            string[] numbers = str.Split(' ');
+
+            string[] numbers = str.Split(
+                new char[] { ' ', '\n', '\r', '\t' },
+                StringSplitOptions.RemoveEmptyEntries
+            );
 
             double min = 0;
             bool found = false;
 
-            foreach (string line in numbers)
+            foreach (string number in numbers)
             {
-                double x = double.Parse(line, CultureInfo.InvariantCulture);
+                double x = double.Parse(number, CultureInfo.InvariantCulture);
 
                 if (x == Math.Truncate(x) && x % 4 == 0)
                 {
