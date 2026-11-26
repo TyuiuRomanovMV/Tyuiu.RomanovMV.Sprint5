@@ -24,7 +24,7 @@ namespace Tyuiu.RomanovMV.Sprint5.Task4.V29
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int x = 2;
+            double x = -3.57;
             Console.WriteLine($"Значение переменной Х = {x}");
 
 
