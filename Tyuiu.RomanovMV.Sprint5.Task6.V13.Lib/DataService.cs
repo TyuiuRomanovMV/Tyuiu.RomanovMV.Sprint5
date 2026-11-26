@@ -14,7 +14,7 @@ namespace Tyuiu.RomanovMV.Sprint5.Task6.V13.Lib
 
             for (int i = 0; i < str.Length - 1; i++)
             {
-                if (str[i] == 'с' && str[i + 1] == 'с')
+                if (char.ToLower(str[i]) == 'с' && char.ToLower(str[i + 1]) == 'с')
                 {
                     count++;
                 }
