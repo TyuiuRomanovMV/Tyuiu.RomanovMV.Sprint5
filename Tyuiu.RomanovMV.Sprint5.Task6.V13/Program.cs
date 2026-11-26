@@ -21,9 +21,9 @@ namespace Tyuiu.RomanovMV.Sprint5.Task6.V13
             Console.Title = "Спринт #5 | Выполнил: Романов М. В. | ИИПБ-26-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт №5                                                               *");
-            Console.WriteLine("* Тема: Чтение набора данных из текстового файла                          *");
-            Console.WriteLine("* Задание #5                                                              *");
-            Console.WriteLine("* Вариант #22                                                             *");
+            Console.WriteLine("* Тема: Обработка текстовых файлов                                        *");
+            Console.WriteLine("* Задание #6                                                              *");
+            Console.WriteLine("* Вариант #13                                                             *");
             Console.WriteLine("* Выполнил: Романов Максим Викторович | ИИПБ-26-1                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
